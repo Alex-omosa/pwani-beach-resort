@@ -28,6 +28,6 @@ USER alex
 
 COPY --from=build ./build ./
 
-RUN ls
+EXPOSE 8080
 
 CMD ["nginx", "-g", "daemon off;"]
